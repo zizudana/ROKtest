@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+.cont_area {
+    padding: 3rem 0;
+}
+.tip {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 575.98px) {
+    .tip {
+        font-size: 1rem;
+    }
+}
+
+/*============================================================
+visual
+============================================================*/
+.vsl_area {
+    overflow: hidden;
+    position: relative;
+    height: 48rem;
+    color: #fff;
+    background-color: #FF8A36;
+}
+
+.vsl_area .grid {
+    height: 100%
+}
+.vsl_area .txt_box {
+    position: relative;
+    padding-top: 11.5rem;
+}
+.vsl_area .tit {
+    width: 54.27%;
+}
+.vsl_area .txt {
+    padding-top: 1.75rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.vsl_area .btn {
+    margin-top: 2rem;
+}
+.vsl_img {
+    position: absolute;
+}
+.vsl_img_1 {
+    top: 16.14%;
+    right: -18.37%;
+    width: 72.05%;
+}
+.vsl_img_2 {
+    bottom: 2.7%;
+    left: 41.88%;
+    width: 30.77%;
+}
+@media (max-width: 575.98px) {
+    .vsl_area {
+        height: 70rem;
+    }
+    .vsl_area .txt_box {
+        padding-top: 8.5rem;
+        text-align: center;
+    }
+    .vsl_area .tit {
+        width: 100%;
+    }
+    .vsl_area .img_box {
+        bottom: 3%;
+    }
+    .vsl_img_1 {
+        top: auto;
+        bottom: 5.55%;
+        right: -18.37%;
+        width: 150%;
+    }
+    .vsl_img_2 {
+        left: 0;
+        width: 55.85%;
+    }
+}
+
+/*============================================================
+button
+============================================================*/
+.btn {
+    display: inline-block;
+    line-height: 1;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+.btn .label {
+    display: inline-block;
+}
+.tcon_btn {
+    font-family: 'NEXON Gothic Bold';
+    font-weight: 400;
+    color: #ff6980;
+    text-align: center;
+    background-color: #000;
+    border-radius: 0.5rem;
+}
+.tcon_btn.lg {
+    padding: 1.5rem;
+    min-width: 23rem;
+    font-size: 2rem;
+}
+.tcon_btn.md {
+    padding: 1.25rem;
+    min-width: 20rem;
+    font-size: 1.5rem;
+}
+.tcon_btn .letter {
+    display: inline-block;
+}
+.tcon_btn:hover .letter {
+    -webkit-animation: btnLetter .35s ease;
+    animation: btnLetter .35s ease;
+}
+@-webkit-keyframes btnLetter {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes btnLetter {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .tcon_btn.lg {
+        padding: 1.8rem 1.5rem;
+    }
+}

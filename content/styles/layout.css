@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*============================================================
+defaut rem & grid style
+============================================================*/
+html {
+    font-size: 20px;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media (max-width: 1199.98px) { /* Large devices (desktops, less than 1200px) */
+    html {
+        font-size: 18px;
+    }
+    .grid {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
+    html {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767.98px) { /* Small devices (landscape phones, less than 768px) */
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width: 575.98px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/*============================================================
+layout align
+============================================================*/
+.flex_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex_row {
+    flex-direction: row;
+}
+.flex_row_rv {
+    flex-direction: row-reverse;
+}
+.flex_col {
+    flex-direction: column;
+}
+.flex_col_rv {
+    flex-direction: column-reverse;
+}
+.flex_spc_btw {
+    justify-content: space-between;
+}
+.flex_spc_ard {
+    justify-content: space-around;
+}
+.flex_spc_cnt {
+    justify-content: center;
+}
+.flex_align_cnt {
+    align-items: center;
+}
+
+
+/*============================================================
+show & hide
+============================================================*/
+.pc_show {
+    display: block;
+}
+.mo_show {
+    display: none;
+}
+@media (max-width: 575.98px) {
+    .pc_show {
+        display: none !important;
+    }
+    .mo_show {
+        display: block !important;
+    }
+}
+
+/*============================================================
+header
+============================================================*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 0;
+    width: 100%;
+    z-index: 100;
+}
+.hd_ci {
+    display: inline-block;
+    height: 3rem;
+}
+.hd_ci img {
+    max-width: initial;
+    width: auto;
+    height: 100%;
+}
